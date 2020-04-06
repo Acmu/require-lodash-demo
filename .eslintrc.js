@@ -1,4 +1,4 @@
-const ERROR = 'error';
+// const ERROR = 'error';
 const WARN = 'warn';
 const OFF = 'off';
 
@@ -12,7 +12,7 @@ module.exports = {
   parser: 'babel-eslint',
   plugins: ['prettier'],
   rules: {
-    'prettier/prettier': ERROR,
+    'prettier/prettier': WARN,
     'no-console': OFF,
     'no-debugger': WARN,
   },

@@ -15,7 +15,18 @@ const baseConfig = {
     extensions: ['.ts', '.tsx', '.js'],
   },
   module: {
-    rules: [{ test: /\.tsx?$/, loader: 'ts-loader' }],
+    rules: [
+      { test: /\.tsx?$/, loader: 'ts-loader' },
+      // {
+      //   loader: 'babel-loader',
+      //   test: /\.js$/,
+      //   exclude: /node_modules/,
+      //   query: {
+      //     plugins: ['lodash'],
+      //     presets: [['@babel/env', { targets: { node: 6 } }]],
+      //   },
+      // },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
